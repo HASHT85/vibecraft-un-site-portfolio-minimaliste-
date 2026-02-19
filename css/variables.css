@@ -1,83 +1,133 @@
 /* ============================================================
-   CSS Custom Properties - Theme Variables
+   CSS Variables - Light Theme
    ============================================================ */
 
 :root {
-    /* Light Theme (Default) */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f8f9fa;
-    --text-primary: #1a1a1a;
-    --text-secondary: #666666;
-    
-    --primary-color: #667eea;
-    --accent-color: #764ba2;
-    
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(99, 102, 241, 0.2);
-    
     /* Typography */
-    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
-    --font-size-lg: 1.25rem;
+    --font-size-lg: 1.125rem;
     --font-size-xl: 1.5rem;
     --font-size-2xl: 2rem;
-    --font-size-3xl: 3rem;
+    --font-size-3xl: 2.5rem;
+    --font-size-4xl: 3.5rem;
+
+    /* Colors - Light Theme */
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --primary-color: #667eea;
+    --primary-dark: #5568d3;
+    --primary-light: #7c8ef2;
     
+    /* Glassmorphism Colors */
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-bg-dark: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --glass-border-light: rgba(255, 255, 255, 0.3);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.05) 100%);
+    
+    /* Status Colors */
+    --success-color: #48bb78;
+    --error-color: #f56565;
+    --warning-color: #ed8936;
+    --info-color: #4299e1;
+
     /* Spacing */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 1.5rem;
     --spacing-xl: 2rem;
-    --spacing-xxl: 4rem;
-    
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
     /* Border Radius */
+    --radius-sm: 0.375rem;
     --radius-md: 0.5rem;
     --radius-lg: 1rem;
-    --radius-xl: 9999px;
-    
+    --radius-xl: 1.5rem;
+    --radius-full: 9999px;
+
     /* Shadows */
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
-    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
     /* Transitions */
-    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-fast: all 0.2s ease;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Z-Index */
+    --z-dropdown: 1000;
+    --z-sticky: 1000;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
 }
 
-/* Dark Theme */
+/* ============================================================
+   CSS Variables - Dark Theme
+   ============================================================ */
+
 [data-theme='dark'] {
-    --bg-primary: #0f0f0f;
-    --bg-secondary: #1a1a1a;
-    --text-primary: #f5f5f5;
-    --text-secondary: #b0b0b0;
-    
+    /* Colors - Dark Theme */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
     --primary-color: #667eea;
-    --accent-color: #764ba2;
+    --primary-dark: #5568d3;
+    --primary-light: #7c8ef2;
     
-    --glass-bg: rgba(20, 20, 30, 0.6);
-    --glass-border: rgba(102, 126, 234, 0.15);
+    /* Glassmorphism Colors - Dark */
+    --glass-bg: rgba(30, 41, 59, 0.8);
+    --glass-bg-dark: rgba(15, 23, 42, 0.6);
+    --glass-border: rgba(148, 163, 184, 0.15);
+    --glass-border-light: rgba(148, 163, 184, 0.1);
     
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.5);
+    /* Gradients remain same */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
 }
 
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    :root {
-        --transition: none;
-        --transition-fast: none;
-    }
+/* ============================================================
+   Utility Color Variables
+   ============================================================ */
+
+:root {
+    /* Additional color utilities for dark theme */
+    color-scheme: light;
 }
 
-/* Print Styles */
+[data-theme='dark'] {
+    color-scheme: dark;
+}
+
+/* ============================================================
+   Print Media Variables
+   ============================================================ */
+
 @media print {
     :root {
-        --bg-primary: #ffffff;
-        --bg-secondary: #ffffff;
-        --text-primary: #000000;
-        --text-secondary: #333333;
+        --bg-primary: white;
+        --bg-secondary: white;
+        --text-primary: black;
+        --text-secondary: #333;
+        --shadow-sm: none;
+        --shadow-md: none;
+        --shadow-lg: none;
+        --shadow-xl: none;
     }
 }

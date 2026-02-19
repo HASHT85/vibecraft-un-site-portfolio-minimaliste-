@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - Développeur Web Full Stack | HTML5, CSS3, JavaScript Vanilla | Glassmorphism Design">
+    <meta name="theme-color" content="#667eea">
     <title>Portfolio | Développeur Web</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +28,7 @@
     <section id="hero" class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Développeur Web Full Stack</h1>
-            <p class="hero-subtitle">Créer des expériences web modernes et performantes</p>
+            <p class="hero-subtitle">Créer des expériences web modernes et performantes avec Glassmorphism Design</p>
             <a href="#contact" class="cta-button">Démarrer un projet</a>
         </div>
         <div class="hero-shape"></div>
@@ -40,6 +42,7 @@
                 <div class="about-text glass">
                     <p>Passionné par la création web, j'aide les entreprises à transformer leurs idées en produits numériques innovants.</p>
                     <p>Spécialisé en technologies modernes avec une approche centrée sur l'utilisateur et les performances.</p>
+                    <p>Expert en design glassmorphism et animations CSS pour créer des interfaces modernes et fluides.</p>
                 </div>
                 <div class="skills glass">
                     <h3>Compétences</h3>
@@ -51,6 +54,7 @@
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">MongoDB</span>
                         <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Glassmorphism</span>
                     </div>
                 </div>
             </div>
@@ -66,84 +70,75 @@
                 <button class="filter-btn active" data-filter="all">Tous</button>
                 <button class="filter-btn" data-filter="frontend">Frontend</button>
                 <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
             </div>
 
             <div class="projects-grid">
+                <!-- Frontend Projects -->
                 <div class="project-card glass" data-category="frontend">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                    <div class="project-info">
-                        <h3>Site E-commerce</h3>
-                        <p>Design responsive avec cart fonctionnel</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
+                    <div class="project-icon">🎨</div>
+                    <h3 class="project-title">Site Vitrine Glassmorphism</h3>
+                    <p class="project-description">Site vitrine moderne avec design glassmorphism, animations CSS fluides et thème dark/light.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">Animations</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass" data-category="frontend">
+                    <div class="project-icon">📱</div>
+                    <h3 class="project-title">App Web Responsive</h3>
+                    <p class="project-description">Application web responsive avec design moderne et interface utilisateur intuitive. Mobile-first approach.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass" data-category="design">
+                    <div class="project-icon">✨</div>
+                    <h3 class="project-title">Système de Design UI</h3>
+                    <p class="project-description">Création d'un système complet de composants réutilisables avec variables CSS et thème dynamique.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">CSS Variables</span>
+                        <span class="project-tag">Glassmorphism</span>
+                        <span class="project-tag">Design System</span>
+                    </div>
+                </div>
+
+                <!-- Full Stack Projects -->
+                <div class="project-card glass" data-category="fullstack">
+                    <div class="project-icon">🚀</div>
+                    <h3 class="project-title">Plateforme E-commerce</h3>
+                    <p class="project-description">Plateforme e-commerce complète avec panier, paiement et administration. Backend Node.js + Frontend moderne.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
                     </div>
                 </div>
 
                 <div class="project-card glass" data-category="fullstack">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                    <div class="project-info">
-                        <h3>App de Gestion</h3>
-                        <p>Tableau de bord avec authentification utilisateur</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">MongoDB</span>
-                        </div>
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">Dashboard Analytics</h3>
+                    <p class="project-description">Tableau de bord avec graphiques en temps réel, authentification et API REST. Architecture scalable.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">WebSocket</span>
                     </div>
                 </div>
 
-                <div class="project-card glass" data-category="frontend">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    <div class="project-info">
-                        <h3>Landing Page</h3>
-                        <p>Page marketing avec animations fluides</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass" data-category="mobile">
-                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
-                    <div class="project-info">
-                        <h3>App Mobile</h3>
-                        <p>Application fitness avec suivi d'activité</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React Native</span>
-                            <span class="tech-badge">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass" data-category="fullstack">
-                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
-                    <div class="project-info">
-                        <h3>SaaS Platform</h3>
-                        <p>Plateforme collaborative multi-utilisateurs</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card glass" data-category="frontend">
-                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
-                    <div class="project-info">
-                        <h3>Portfolio</h3>
-                        <p>Site portfolio minimaliste et performant</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
+                <div class="project-card glass" data-category="design">
+                    <div class="project-icon">🎭</div>
+                    <h3 class="project-title">Portfolio Personnel</h3>
+                    <p class="project-description">Portfolio showcasing glassmorphism design avec animations fluides et performance optimale.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Glassmorphism</span>
+                        <span class="project-tag">Animations CSS</span>
+                        <span class="project-tag">Performance</span>
                     </div>
                 </div>
             </div>
@@ -154,56 +149,56 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
-            <div class="contact-wrapper">
-                <form id="contactForm" class="contact-form glass">
+            
+            <div class="contact-card glass">
+                <form id="contactForm" class="contact-form">
+                    <div id="formMessage" class="form-message"></div>
+
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Votre nom" required>
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
                     </div>
+
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Votre email" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
                     </div>
+
                     <div class="form-group">
-                        <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+                        <label for="phone">Téléphone (optionnel)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
                     </div>
-                    <button type="submit" class="submit-button">Envoyer</button>
-                    <p id="formMessage" class="form-message"></p>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Décrivez votre projet..."></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Envoyer le message</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#hero">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Réseaux</h4>
-                    <ul>
-                        <li><a href="#" target="_blank">LinkedIn</a></li>
-                        <li><a href="#" target="_blank">GitHub</a></li>
-                        <li><a href="#" target="_blank">Twitter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Email: hello@example.com</li>
-                        <li>Phone: +33 6 00 00 00 00</li>
-                    </ul>
-                </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                    <span>💻</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                    <span>💼</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter">
+                    <span>🐦</span>
+                </a>
+                <a href="mailto:hello@example.com" class="social-link" title="Email">
+                    <span>✉️</span>
+                </a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Portfolio. Tous droits réservés.</p>
-            </div>
+            <p>&copy; 2024 Portfolio. Créé avec HTML5, CSS3 et JavaScript Vanilla.</p>
+            <p style="font-size: var(--font-size-xs); margin-top: var(--spacing-md);">Design Glassmorphism | Dark/Light Mode | Responsive</p>
         </div>
     </footer>
 
